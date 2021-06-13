@@ -1,0 +1,1 @@
+{"name":"Local: maps","url":"d:\\Ankit\\College\\C++ DTU\\B2\\maps.cpp","tests":[{"id":1623083727606,"input":"2\nank\n33333\nsss\n3345\nank\nsss\nafd\n","output":""}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Ankit\\College\\C++ DTU\\B2\\maps.cpp","group":"local","local":true}

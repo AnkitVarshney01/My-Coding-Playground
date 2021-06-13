@@ -1,0 +1,1 @@
+{"name":"Local: Bitwise_Tuples","url":"d:\\Ankit\\College\\C++ DTU\\B2\\CodeChef\\Bitwise_Tuples.cpp","tests":[{"id":1622906421978,"input":"4\n1 2\n2 2\n4 2\n8 4","output":"1\n9\n225\n228250597"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Ankit\\College\\C++ DTU\\B2\\CodeChef\\Bitwise_Tuples.cpp","group":"local","local":true}
