@@ -1,0 +1,1 @@
+{"name":"Local: ASS2RecursiveMS","url":"d:\\Ankit\\College\\C++ DTU\\B2\\ASS2RecursiveMS.cpp","tests":[{"id":1628011334436,"input":"11\n100 56 41 8 92 5 27 36 45 48 85","output":"5 8 27 36 41 45 48 56 85 92 100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Ankit\\College\\C++ DTU\\B2\\ASS2RecursiveMS.cpp","group":"local","local":true}

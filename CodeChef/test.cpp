@@ -2,7 +2,8 @@
 using namespace std;
 int main()
 {
-    int y = min(2, 2);
-    cout << y;
+    string s = "5616geejhhj55245k";
+    int x = stoi(s);
+    cout << x;
     return 0;
 }

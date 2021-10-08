@@ -1,0 +1,1 @@
+{"name":"Local: ASS1MergedSort","url":"d:\\Ankit\\College\\C++ DTU\\B2\\ASS1MergedSort.c","tests":[{"id":1627894413689,"input":"5 9\n1 5 8 11 15\n3 5 6 9 12 15 16 20 100","output":"1 3 5 5 6 8 9 11 12 15 15 16 20 100"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"d:\\Ankit\\College\\C++ DTU\\B2\\ASS1MergedSort.c","group":"local","local":true}
