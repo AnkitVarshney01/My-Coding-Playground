@@ -44,6 +44,7 @@ void mergeSort(int arr[], int l, int r, int n)
         mergeSortedArray(arr, l, m, r, n);
     }
 }
+
 int main()
 {
     int n;

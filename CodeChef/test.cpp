@@ -1,9 +1,31 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 int main()
 {
-    string s = "5616geejhhj55245k";
-    int x = stoi(s);
-    cout << x;
+    try
+    {
+        char *str;
+        str = new char[10];
+        if (str == NULL)
+            throw "Allocation failed";
+
+        for (int i = 0; i < 100; i++)
+        {
+            if (i > 9)
+                throw i;
+            str[i] = 'z';
+        }
+    }
+    catch (int j)
+    {
+        cout << "Exceptions:-" << endl;
+        cout << "Index " << j << " is out of bounds" << endl;
+    }
+    catch (char *s)
+    {
+        cout << "Exceptions:- " << endl;
+        cout << s;
+    }
+
     return 0;
 }
