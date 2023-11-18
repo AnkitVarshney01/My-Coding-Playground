@@ -1,33 +1,14 @@
-#include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    int freq[26]={0};
-    char c;
-    FILE *fileptr;
-    fileptr=fopen("Test.txt","r");
-    if (fileptr == NULL)
-        printf("File is not available to open.");
-    else
-    {
-        while ((c=fgetc(fileptr)) != EOF )
-        {
-            int i,j;
-            i=c-65;
-            j=c-97;
-            if (j>=0 && j<=25)
-                freq[j]++;
-            else if (i>=0 && i<=25)
-                freq[i]++;
-        }
-    }
-    printf("Alphabet\t\tFrequency\n");
-    printf("----------------------------------\n");
-    for (int i = 0; i < 26; i++)
-    {
-        char ch=i+65;
-        printf("    %c\t\t\t    %d \n",ch,freq[i]);
-    }
-    printf("----------------------------------\n");
-    fclose(fileptr);
+    double kloc = 0;
+    double table[3][4] = {{2.4, 1.05, 2.5, 0.38}, {3.0, 1.12, 2.5, 0.35}, {3.6, 1.2, 2.5, 0.32}};
+
+    int x;
+    printf("Which model you want to calculate for?\n");
+    printf("a. Organic Model\n");
+    printf("b. Semi-Detached Model\n");
+    printf("c. Embedded Model\n");
+
     return 0;
 }

@@ -39,34 +39,44 @@ void fastio()
 int32_t main()
 {
     fastio();
-    int p = 1000001;
-    int seq[1000001];
-    for (int i = 0; i < p; i++)
-    {
-        seq[i] = 0;
-    }
+    string s = "I am using hackerrank to improve programming", t = "am hackerrank to improve";
 
-    int n;
-    cout<<"Enter n: ";
-    cin >> n;
-    int arr[12];
-    for (int i = 0; i < 12; i++)
+    string word1 = "", word2 = "";
+    vector<string> ans;
+    int i = 0, j = 0;
+    while (i < s.length() || j < t.length())
     {
-        cin >> arr[i];
-        seq[arr[i]] = 1;
-    }
+        while (i < s.length() && s[i] != ' ')
+        {
+            word1.push_back(s[i]);
+            i++;
+        }
+        i++;
 
-    int count = 0, max = -1;
-    for (int i = 0; i < p; i++)
-    {
-        if (seq[i] == 1)
-            count++;
+        if (word2 == "")
+        {
+            while (j < t.length() && t[j] != ' ')
+            {
+                word2.push_back(t[j]);
+                j++;
+            }
+            j++;
+        }
+
+        if (!word1.empty() && !word2.empty() && word1 == word2)
+        {
+            word1 = "";
+            word2 = "";
+        }
         else
-            count = 0;
-
-        if (max < count)
-            max = count;
+        {
+            ans.push_back(word1);
+            word1 = "";
+        }
     }
-    cout << count;
+
+    for (auto s1 : ans)
+        cout << s1 << endl;
+
     return 0;
 }
